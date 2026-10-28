@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FANOUS | Denim Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">FANOUS<span>.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="cart-button" id="open-cart">
+            Cart (<span id="cart-count">0</span>)
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">THE NEW DENIM COLLECTION</p>
+                <h1>Find Your<br>Perfect <span>Fit.</span></h1>
+                <p class="hero-text">
+                    Timeless denim. Effortless style.
+                    Discover your new favorite fit with DALLY.
+                </p>
+                <a href="#shop" class="main-button">SHOP COLLECTION</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero.jpg" alt="DALLY denim collection">
+            </div>
+        </section>
+
+        <section class="shop-section" id="shop">
+            <div class="section-heading">
+                <p class="eyebrow">MADE FOR YOUR STYLE</p>
+                <h2>Our Collection</h2>
+                <p>Find the denim that fits your style.</p>
+            </div>
+
+            <div class="products">
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/jeans1.jpg" alt="Wide Leg Sweetpants">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-type">SWEETPANTS</p>
+                        <h3>Wide Leg Sweetpants</h3>
+                        <p class="price">650 EGP</p>
+                        <button class="add-button"
+                            data-id="1"
+                            data-name="Wide Leg Sweetpants"
+                            data-price="650"
+                            data-image="images/jeans1.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/jeans2.jpg" alt="Double Wide Leg Jeans">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-type">DOUBLE WIDE LEG</p>
+                        <h3>Double Wide Leg</h3>
+                        <p class="price">700 EGP</p>
+                        <button class="add-button"
+                            data-id="2"
+                            data-name="Double Wide Leg"
+                            data-price="700"
+                            data-image="images/jeans2.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/jeans3.jpg" alt="Charleston Jeans">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-type">CHARLESTON</p>
+                        <h3>Charleston Jeans</h3>
+                        <p class="price">680 EGP</p>
+                        <button class="add-button"
+                            data-id="3"
+                            data-name="Charleston Jeans"
+                            data-price="680"
+                            data-image="images/jeans3.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+                
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/jeans4.jpg" alt="Charleston Jeans">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-type">WIDE LEG</p>
+                        <h3>Wide Leg Jeans</h3>
+                        <p class="price">680 EGP</p>
+                        <button class="add-button"
+                            data-id="4"
+                            data-name=" Jeans"
+                            data-price="680"
+                            data-image="images/jeans3.jpg">
+                            Add to Cart
+                        </button>
+                    </div>
+                </article>
+
+
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <p class="eyebrow">OUR STYLE, YOUR STORY</p>
+            <h2>Denim That Defines You.</h2>
+            <p>
+                At FANOUS, we believe that the perfect pair of jeans
+                makes every look feel special.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">FANOUS<span>.</span></a>
+        <p>© 2026 FANOUS. All rights reserved.</p>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <section class="cart-panel" role="dialog"
+            aria-modal="true" aria-labelledby="cart-title">
+
+            <div class="cart-header">
+                <h2 id="cart-title">Your Cart</h2>
+                <button id="close-cart" class="close-button"
+                    aria-label="Close cart">&times;</button>
+            </div>
+
+            <div id="cart-items" class="cart-items">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-footer">
+                <p>Total: <strong id="cart-total">0 EGP</strong></p>
+                <button id="checkout-button" class="main-button checkout-button">
+                    Place Order
+                </button>
+                <p class="cart-note">
+                    Demo store: orders are not sent to a server.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
